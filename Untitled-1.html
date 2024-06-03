@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shri Agro Tech Farming and Research Center</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+      </div>
+      <h1>Shri Agro Tech Farming and Research Center</h1>
+    
+    </header>
+
+    <nav>
+      <div>
+        <a
+          href="#home"
+          class="nav-link"
+          data-details="Welcome to our Home page. Here you'll find the latest news and updates"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="nav-link"
+          data-details="Learn more about our mission, vision, and the team behind our research and innovations."
+          >About Us</a
+        >
+        <a
+          href="#services"
+          class="nav-link"
+          data-details="Explore the wide range of services we offer to support sustainable agriculture."
+          >Services</a
+        >
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Contact</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="https://wa.me/98005400011" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="https://m.me/agrotech" target="_blank"
+              ><i class="fab fa-facebook-messenger"></i
+            ></a>
+            <a href="https://www.instagram.com/agrotech" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+
+        <script>
+          /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function (event) {
+            if (!event.target.matches(".dropbtn")) {
+              var dropdowns =
+                document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains("show")) {
+                  openDropdown.classList.remove("show");
+                }
+              }
+            }
+          };
+        </script>
+      </div>
+      <div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." />
+          <button>Go</button>
+          <br />
+        </div>
+      </div>
+    </nav>
+
+    <div class="content">
+        <section class="certificate">
+            <h2>Certificate of Incorporation</h2>
+            <img src="./nits.jpg.jpg" alt="Certificate of Incorporation" />
+          </section>
+      <br />
+      <section id="home">
+        <h2>Home</h2>
+        <p>
+          Welcome to Shri Agro Tech Farming and Research Center, your trusted
+          partner in agricultural innovation and sustainability.
+        </p>
+        <div>
+          Our center is committed to advancing farming techniques through
+          cutting-edge research and development.
+        </div>
+        <p>
+          Join us in our mission to create a sustainable future for
+          agriculture.
+        </p>
+      </section>
+      <br />
+      <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Shri Agro Tech Farming and Research Center.</p>
+        <div>
+          We are dedicated to research and innovation in the field of
+          agriculture, striving to improve farming practices and promote
+          sustainable agriculture.
+        </div>
+        <p>
+          Our team of experts is passionate about agriculture and works
+          tirelessly to develop solutions that address the challenges faced by
+          modern farmers.
+        </p>
+        <div>
+          From improving crop yields to enhancing soil health, we are at the
+          forefront of agricultural research and development.
+        </div>
+        <p>
+          Established in 2000, our center has grown to become a leading
+          institution in agricultural research, known for our commitment to
+          excellence and innovation.
+        </p>
+      </section>
+      <br />
+      <section id="services">
+        <h2>Services</h2>
+        <ul>
+          <li>Research and Development</li>
+          <p>
+            Our R&D team works on innovative projects to develop new farming
+            techniques and technologies that increase productivity and
+            sustainability.
+          </p>
+          <li>Consultancy Services</li>
+          <p>
+            We offer expert consultancy services to help farmers implement best
+            practices and optimize their agricultural operations.
+          </p>
+          <li>Training Programs</li>
+          <p>
+            Our training programs are designed to educate farmers and
+            agribusiness professionals on the latest advancements in
+            agriculture.
+          </p>
+          <li>Farming Solutions</li>
+          <p>
+            We provide comprehensive farming solutions tailored to meet the
+            specific needs of our clients, ensuring they achieve the best
+            possible outcomes.
+          </p>
+        </ul>
+      </section>
+      <br />
+      <section id="contact">
+        <h2>Connect</h2>
+        <p>
+          If you have any questions or would like to learn more about our
+          services, please don't hesitate to contact us.
+        </p>
+        <p>Email: Ramchandraojha89@gmail.com</p>
+        <p>Phone: 98005400011</p>
+        <p>Address: Naya baneshwor, Kathmandu</p>
+        <p>Find us on social media:</p>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/agrotech" target="_blank">Facebook</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/agrotech" target="_blank">Twitter</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/agrotech" target="_blank">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://www.agrotech.com/agrotech" target="_blank">E-mail</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2024 Shri Agro Tech Farming and Research Center. All rights
+        reserved.
+      </p>
+    </footer>
+  </body>
+</html>
